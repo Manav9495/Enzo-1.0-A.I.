@@ -1,0 +1,17 @@
+{
+  "name": "enzo-chatbot",
+  "version": "1.0.0",
+  "description": "A chatbot using Gemini AI",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0",
+    "@google/generative-ai": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
