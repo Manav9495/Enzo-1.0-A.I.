@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Main Chat Layout */
+.main-content {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Left Panel (History) */
+.chat-history {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#history-list {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+#history-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#page-num {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Main Chat Box */
+.chat-box {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Output */
+#chat-output {
+    overflow-y: auto;
+    height: 300px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Input */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5C6BC0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f48cc;
+}
+
+/* User and Enzo Message Styles */
+.user-message {
+    background-color: #d1f7d1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.enzo-message {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    align-self: flex-start; /* Align Enzo's messages to the left */
+}
+
+/* Gradient Effect for Each Page */
+.chat-history {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+/* History Scroll and Pagination */
+#history-list {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#page-num {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Hover Effects */
+#history-list li:hover {
+    background-color: #e9ecef;
+}

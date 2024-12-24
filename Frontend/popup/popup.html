@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Chatbot</title>
+    <link rel="stylesheet" href="/Frontend/popup/popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Bar -->
+        <header>
+            <div class="logo">
+                <img src="/Frontend/icon/bot-icon.png" alt="Enzo Logo" class="logo-img">
+                <h1>Enzo</h1>
+            </div>
+        </header>
+
+        <!-- Main Chat Layout -->
+        <div class="main-content">
+            <!-- Left History Panel -->
+            <aside class="chat-history">
+                <h2>Chat History</h2>
+                <ul id="history-list"></ul>
+                <div id="page-num">Page 1</div>
+            </aside>
+
+            <!-- Main Chat Window -->
+            <section class="chat-box">
+                <div id="chat-output"></div>
+                <textarea id="user-input" placeholder="Type here..." rows="4"></textarea>
+                <button id="sendButton">Send</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="/Frontend/popup/popup.js"></script>
+</body>
+</html>
