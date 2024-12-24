@@ -22,7 +22,7 @@ Follow these steps to get Enzo up and running on your local machine:
 1. Clone the Repository
 bash
 Copy code
-git clone https://github.com/your-username/enzo-chatbot.git
+git clone https://github.com/Manav9495/Enzo-1.0-A.I.
 2. Install Dependencies
 Navigate into the project directory and install the required dependencies:
 
